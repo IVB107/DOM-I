@@ -55,3 +55,18 @@ document.getElementById("cta-img").src = siteContent["cta"]["img-src"];
 
 
 // Main Content
+// Top
+document.querySelectorAll(".text-content h4")[0].textContent = siteContent["main-content"]["features-h4"];
+document.querySelectorAll(".text-content p")[0].textContent = siteContent["main-content"]["features-content"];
+document.querySelectorAll(".text-content h4")[1].textContent = siteContent["main-content"]["about-h4"];
+document.querySelectorAll(".text-content p")[1].textContent = siteContent["main-content"]["about-content"];
+// Image
+document.getElementById("middle-img").src = siteContent["main-content"]["middle-img-src"];
+// Bottom
+document.querySelectorAll(".text-content h4")[2].textContent = siteContent["main-content"]["services-h4"];
+document.querySelectorAll(".text-content p")[2].textContent = siteContent["main-content"]["services-content"];
+document.querySelectorAll(".text-content h4")[3].textContent = siteContent["main-content"]["product-h4"];
+document.querySelectorAll(".text-content p")[3].textContent = siteContent["main-content"]["product-content"];
+document.querySelectorAll(".text-content h4")[4].textContent = siteContent["main-content"]["vision-h4"];
+document.querySelectorAll(".text-content p")[4].textContent = siteContent["main-content"]["vision-content"];
+
