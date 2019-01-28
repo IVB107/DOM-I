@@ -38,10 +38,7 @@ const siteContent = {
 };
 
 // --- Header ---
-
-// Example: Update the img src for the logo
-let logo = document.getElementById("logo-img");
-logo.setAttribute('src', siteContent["nav"]["img-src"]);
+document.getElementById("logo-img").src = siteContent["nav"]["img-src"];
 
 // Nav Links
 document.querySelectorAll("nav a").forEach((link, index) => {
@@ -54,7 +51,6 @@ document.querySelector(".cta-text button").textContent = siteContent["cta"]["but
 document.getElementById("cta-img").src = siteContent["cta"]["img-src"];
 
 // --- Main Content ---
-
 // Top
 document.querySelectorAll(".text-content h4")[0].textContent = siteContent["main-content"]["features-h4"];
 document.querySelectorAll(".text-content p")[0].textContent = siteContent["main-content"]["features-content"];
@@ -76,7 +72,6 @@ document.querySelectorAll(".text-content h4")[4].textContent = siteContent["main
 document.querySelectorAll(".text-content p")[4].textContent = siteContent["main-content"]["vision-content"];
 
 // --- Contact ---
-
 document.querySelector(".contact h4").textContent = siteContent["contact"]["contact-h4"];
 document.querySelectorAll(".contact p")[0].textContent = siteContent["contact"]["address"];
 document.querySelectorAll(".contact p")[1].textContent = siteContent["contact"]["phone"];
