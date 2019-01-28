@@ -43,7 +43,17 @@ document.getElementById("logo-img").src = siteContent["nav"]["img-src"];
 // Nav Links
 document.querySelectorAll("nav a").forEach((link, index) => {
   link.textContent = siteContent["nav"][`nav-item-${index + 1}`];
-})
+  link.style.color = 'green';
+});
+// Added Links
+const nav = document.querySelector("nav");
+const addLinks = ["Demo", "Quote"];
+addLinks.forEach((link, index) => {
+  const newLink = document.createElement("a");
+  newLink.textContent = link;
+  newLink.style.color = "green";
+  return index === 0 ? nav.prepend(newLink) : nav.append(newLink);
+});
 
 // CTA
 document.querySelector(".cta-text h1").textContent = siteContent["cta"]["h1"];
