@@ -51,6 +51,7 @@ const addLinks = ["Demo", "Quote"];
 addLinks.forEach((link, index) => {
   const newLink = document.createElement("a");
   newLink.textContent = link;
+  newLink.href = "#"
   newLink.style.color = "green";
   return index === 0 ? nav.prepend(newLink) : nav.append(newLink);
 });
